@@ -1,5 +1,14 @@
 # codecentricAI-docker
 Dockerfile for codecentricAI Bootcamp environment
 
-Contains Python 3.6 environment + Juypter Labs + packages for machine learning with scikit-learn and h2o.
-Use for practical parts of codecentric.ai Bootcamp: http://52.51.244.174/deep-learning-bootcamp/
+```bash
+git clone https://github.com/codecentric/codecentric.AI-docker.git
+cd codecentric.AI-docker
+
+docker build -t codecentric.ai-docker .
+
+git clone https://github.com/codecentric/codecentric.AI-bootcamp
+cd codecentric.AI-bootcamp
+
+docker run -p 8888:8888 -v $(pwd)/notebooks:/notebooks codecentric.ai-docker
+```

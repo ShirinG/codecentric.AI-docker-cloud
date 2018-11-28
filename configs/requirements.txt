@@ -15,4 +15,7 @@ h2o
 opencv-python
 imutils
 Pillow
+plotly
+keras
+tensorflow
 xgboost
